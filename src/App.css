@@ -1,0 +1,381 @@
+.overlay-container-outer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(50,50,50,.9);
+  /* opacity: 50%; */
+}
+.overlay-container-inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: gray;
+  min-height: 35rem;
+  min-width: 20rem;
+  opacity: 100%;
+  padding: 15px;
+}
+
+.overlay-container-inner input {
+  padding: 3px;
+  color: darkgray;
+  border-radius: 3px;
+  transition: all .2s;
+}
+.overlay-container-inner .overlay.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 10rem;
+  margin: 15px 0px;
+  text-transform: uppercase;
+  background: var(--color-logo-light);
+  background: radial-gradient(circle, rgba(119,246,159,1) 9%, rgba(0,150,85,1) 60%);
+  border-radius: 5px;
+  border: 1px solid rgba(0,0,0,.4);
+  transition: all .2s;
+}
+.overlay-container-inner .overlay.link {
+  margin: 5px 0;
+}
+.overlay-container-inner .overlay.link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.overlay-container-inner .overlay.close {
+  position: absolute;
+  top: .5rem;
+  right: .5rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  height: 25px;
+  width: 25px;
+  padding: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 100%;
+  background-color: var(--color-logo-dark);
+  border: 1px solid rgba(0,0,0,.2);
+  transition: all .2s;
+}
+.overlay-container-inner .overlay.close:hover,
+.overlay-container-inner .overlay.close:visited,
+.overlay-container-inner .overlay.close:active {
+    background-color: var(--color-logo-light);
+}
+.overlay-container-inner .overlay.close:hover,
+.overlay-container-inner .overlay.close:visited,
+.overlay-container-inner .overlay.close:active,
+.overlay-container-inner input:hover,
+.overlay-container-inner input:visited,
+.overlay-container-inner input:active,
+.overlay-container-inner .overlay.btn:hover,
+.overlay-container-inner .overlay.btn:visited,
+.overlay-container-inner .overlay.btn:active {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.header {
+  width: 100%;
+  min-height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  background-color: rgba(0,0,0,.2);
+}
+.header .header__left .header-logo__placement {
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+}
+.header .header__center .header-content {
+  font-size: 2.5rem;
+  letter-spacing: 4px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-weight: 1000;
+  opacity: 75%;
+  cursor: default;
+  user-select: none;
+}
+.header .header__right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header .header__right .header-profile__picture {
+  height: 60px;
+  width: 60px;
+  background-color: gray;
+  border-radius: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+.main-section {
+  display: flex;
+  justify-content: flex-start;
+  min-height: 800px;
+}
+
+
+.navbar {
+  height: inherit;
+  min-width: 140px;
+  display: flex;
+  flex-direction: column;
+  -ms-align-items: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0,0,0,.2);
+  text-transform: uppercase;
+}
+.navbar .navbar-list {
+  display: flex;
+  flex-direction: column;
+  -ms-align-items: center;
+  align-items: center;
+  width: 100%;
+}
+.navbar .navbar-list .navbar-button {
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  font-size: 1rem;
+  text-align: center;
+  background: var(--color-btn-nav);
+  background-size: 100%;
+  transition: all 1s;
+}
+
+.navbar .navbar-list .navbar-button:hover {
+  background: var(--color-btn-nav-hover);
+  background-size: 1600%;
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+
+.main-content {
+  padding: 40px 60px;
+  width: 100%;
+}
+.main-content .content-home {
+
+}
+.main-content .contentProgress {
+  width: 100%;
+}
+.main-content .contentProgress .masterButtons {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  background-color: gray;
+}
+.main-content .contentProgress .masterButtons .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: gray;
+  width: 100%;
+  height: 60px;
+}
+.main-content .contentProgress .masterButtons .btn:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+.main-content .contentProgress .masterButtons .btn:not(:last-child) {
+  border-right: 1px solid rgba(0,0,0,.4);
+}
+.main-content .contentProgress .progress-post {
+  margin: 10px 0;
+  display: flex;
+}
+.main-content .contentProgress .progress-post-container,
+.main-content .contentProgress .btn {
+  background-color: gray;
+}
+.main-content .contentProgress .progress-post-container {
+  border-right: 1px solid rgba(0,0,0,.4);
+  width: 100%;
+  padding: 1rem;
+}
+.main-content .contentProgress .progress-post-container > div {
+    margin-top: 10px;
+}
+.main-content .contentProgress .btn.delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  background-color: darkred;
+}
+.main-content .contentProgress .btn.delete:hover {
+  cursor: pointer;
+  background-color: orange;
+}
+.main-content .contentProgress .progress-post-top,
+.main-content .contentProgress .progress-post-bottom {
+  display: flex;
+}
+.main-content .contentBugs {
+  width: 100%;
+}
+.main-content .contentBugs .buttons {
+  display: flex;
+}
+.main-content .contentBugs .buttons .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: gray;
+  width: 100%;
+  height: 60px;
+}
+.main-content .contentBugs .buttons .btn:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+.main-content .contentBugs .buttons .btn:not(:last-child) {
+  border-right: 1px solid rgba(0,0,0,.4);
+}
+.main-content .contentBugs .buttons {
+  display: flex;
+}
+.main-content .contentBugs .bugCategory .bugCategoryTitle {
+  font-size: 2rem;
+}
+.main-content .contentBugs > *:not(:first-child),
+.main-content .contentBugs .bugCategory > *:not(:first-child) {
+  margin-top: 10px;
+}
+.main-content .contentBugs .bugPost .bugPostContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: darkgray;
+  padding: 1rem;
+}
+.main-content .contentBugs .bugPost .bugPostContainer > div:not(:first-child) {
+  margin-top: 1rem;
+}
+.main-content .contentBugs .bugPost .bugPostContainer > div:last-child {
+  margin-bottom: 1rem;
+}
+.main-content .contentBugs .bugPost .bugPostContainer .bugTitle {
+  font-size: 1.1rem;
+}
+.main-content .contentBugs .bugPost .bugPostContainer .bugTags {
+  font-size: .9rem;
+}
+.main-content .contentBugs .bugPost .bugPostContainer .bugSubtitle {
+  display: flex;
+}
+.main-content .contentBugs .bugPost .bugPostContainer .bugSubtitle > div {
+  margin-right: 3rem;
+}
+.main-content .contentBugs .bugPost .bugPostContainer .bugPreviewText {
+  font-size: .9rem;
+  opacity: 70%;
+}
+.main-content .contentBugs .bugPost .bugPostContainer .bugText {
+
+}
+.main-content .contentBugs .bugPost .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.main-content .content-archive {
+
+}
+.main-content .content-settings {
+
+}
+
+
+
+.footer {
+  width: 100%;
+  min-height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 25px;
+  background-color: rgba(0,0,0,.2);
+}
+
+.footer-element {
+  margin: 25px;
+}
+
+.soft-hover {
+  transition: all .5s;
+}
+.soft-hover:hover {
+  cursor: pointer;
+  transform: scale(1.08);
+}
+
+
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
