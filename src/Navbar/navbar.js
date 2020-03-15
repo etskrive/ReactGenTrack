@@ -13,6 +13,7 @@ export default function Navbar(props) {
         <div onClick={currentContentState} className="navbar-button">Bugs</div>
         <div onClick={currentContentState} className="navbar-button">Archive</div>
         <div onClick={currentContentState} className="navbar-button">Settings</div>
+        <div onClick={currentContentState} className="navbar-button">About</div>
       </div>
     </div>
   )

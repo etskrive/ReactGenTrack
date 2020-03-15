@@ -4,6 +4,7 @@ import Progress from './progress.js'
 import Bugs from './bugs.js'
 import Archive from './archive.js'
 import Settings from './settings.js'
+import About from './about.js'
 
 // export {default as Home} from './home.js'
 // export {default as Progress} from './progress.js'
@@ -23,7 +24,8 @@ export default function Content(props) {
     {contentName: "Progress", contentState: false},
     {contentName: "Bugs", contentState: false},
     {contentName: "Archive", contentState: false},
-    {contentName: "Settings", contentState: false}
+    {contentName: "Settings", contentState: false},
+    {contentName: "About", contentState: false}
   ]
 
   useEffect(() => {
@@ -55,6 +57,9 @@ export default function Content(props) {
             break;
           case "Settings":
             setContent(<Settings />)
+            break;
+          case "About":
+            setContent(<About />)
             break;
         }
       };

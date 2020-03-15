@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import Header from './Header/header.js'
-import UserOverlay from './Main/userOverlay.js'
+import UserOverlay from './Overlay/userOverlay.js'
 import Navbar from './Navbar/navbar.js'
 import Content from './Main/content.js'
 import Footer from './Footer/footer.js'
@@ -13,6 +13,7 @@ function App() {
   const [userState, setUser] = useState()
   const [userInfo, setUserInfo] = useState([])
   const [overlayState, setOverlay] = useState()
+  const [overlayContent, setOverlayContent] = useState()
 
   useEffect(() => {
     setState("Home")
@@ -52,6 +53,7 @@ function App() {
         userState={ userState }
         userInfo={ userInfo }
         overlayState={ e => setOverlay(!overlayState) }
+        overlayContent={ e =>                 setOverlayContent(!overlayContent) }
         />
       <div className="main-section">
         <Navbar
